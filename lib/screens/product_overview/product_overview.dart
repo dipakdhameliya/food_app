@@ -1,14 +1,10 @@
 import 'dart:ui';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:food_app/config/colors.dart';
-// import 'package:food_app/models/review_cart_model.dart';
-// import 'package:food_app/providers/wishlist_provider.dart';
-// import 'package:food_app/screens/review_cart/review_cart.dart';
-// import 'package:food_app/widgets/count.dart';
-// import 'package:provider/provider.dart';
+import '../../widgets/count.dart';
+
 
 enum SinginCharacter { fill, outline }
 
@@ -197,41 +193,41 @@ class _ProductOverviewState extends State<ProductOverview> {
                           ],
                         ),
                         Text("\$${widget.productPrice}"),
-                        // Count(
-                        //   productId: widget.productId,
-                        //   productImage: widget.productImage,
-                        //   productName: widget.productName,
-                        //   productPrice: widget.productPrice,
-                        //   productUnit: '500 Gram',
-                        // ),
-                        // Container(
-                        //   padding: EdgeInsets.symmetric(
-                        //     horizontal: 30,
-                        //     vertical: 10,
-                        //   ),
-                        //   decoration: BoxDecoration(
-                        //     border: Border.all(
-                        //       color: Colors.grey,
-                        //     ),
-                        //     borderRadius: BorderRadius.circular(
-                        //       30,
-                        //     ),
-                        //   ),
-                        //   child: Row(
-                        //     mainAxisAlignment: MainAxisAlignment.center,
-                        //     children: [
-                        //       Icon(
-                        //         Icons.add,
-                        //         size: 17,
-                        //         color: primaryColor,
-                        //       ),
-                        //       Text(
-                        //         "ADD",
-                        //         style: TextStyle(color: primaryColor),
-                        //       )
-                        //     ],
-                        //   ),
-                        // ),
+                        Count(
+                          productId: widget.productId,
+                          productImage: widget.productImage,
+                          productName: widget.productName,
+                          productPrice: widget.productPrice,
+                          productUnit: '500 Gram',
+                        ),
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 30,
+                            vertical: 10,
+                          ),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                            borderRadius: BorderRadius.circular(
+                              30,
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.add,
+                                size: 17,
+                                color: primaryColor,
+                              ),
+                              Text(
+                                "ADD",
+                                style: TextStyle(color: primaryColor),
+                              )
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   )

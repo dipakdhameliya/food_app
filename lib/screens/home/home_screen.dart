@@ -235,7 +235,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) =>
-                        Sear1ch(),
+                        Search(),
                   ),
                 );
               },

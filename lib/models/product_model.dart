@@ -7,10 +7,12 @@ class ProductModel {
   List<dynamic>productUnit;
   ProductModel(
       {
-      this.productQuantity,
-      this.productId,
-      this.productUnit,
-      this.productImage,
-      this.productName,
-      this.productPrice});
+      required this.productQuantity,
+      required this.productId,
+      required this.productUnit,
+      required this.productImage,
+      required this.productName,
+      required this.productPrice});
+
+  get wishList => null;
 }

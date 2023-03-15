@@ -13,7 +13,7 @@ class ProductProvider with ChangeNotifier {
       productName: element.get("productName"),
       productPrice: element.get("productPrice"),
       productId: element.get("productId"),
-      productUnit: element.get("productUnit"),
+      productUnit: element.get("productUnit"), productQuantity: element.get("productQuantity"),
     );
     search.add(productModel);
   }
@@ -42,7 +42,6 @@ class ProductProvider with ChangeNotifier {
     return herbsProductList;
   }
 
-//////////////// Fresh Product ///////////////////////////////////////
 
   List<ProductModel> freshProductList = [];
 
@@ -66,7 +65,7 @@ class ProductProvider with ChangeNotifier {
     return freshProductList;
   }
 
-//////////////// Root Product ///////////////////////////////////////
+
 
   List<ProductModel> rootProductList = [];
 

@@ -116,11 +116,11 @@ class _DrawerSideState extends State<DrawerSide> {
                 iconData: Icons.favorite_outline,
                 title: "Wishlist",
                 onTap: () {
-                  // Navigator.of(context).push(
-                  //   MaterialPageRoute(
-                  //     builder: (context) => WishLsit(),
-                  //   ),
-                  // );
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => WishList(),
+                    ),
+                  );
                 }
                 ),
             listTile(iconData: Icons.copy_outlined, title: "Raise a Complaint", onTap: () {  }),

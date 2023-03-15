@@ -7,24 +7,25 @@ import 'package:food_app/config/colors.dart';
 
 class SingleItem extends StatefulWidget {
   bool isBool = false;
-  // String productImage;
-  // String productName;
-  // bool wishList = false;
-  // int productPrice;
-  // String productId;
-  // int productQuantity;
-  // Function onDelete;
+  String productImage;
+  String productName;
+  bool wishList = false;
+  int productPrice;
+  String productId;
+  int productQuantity;
+  Function onDelete;
   var productUnit;
-  // SingleItem(
-  //     {this.productQuantity,
-  //     this.productId,
-  //     this.productUnit,
-  //     this.onDelete,
-  //     this.isBool,
-  //     this.productImage,
-  //     this.productName,
-  //     this.productPrice,
-  //     this.wishList});
+  SingleItem(
+      {
+        required this.productQuantity,
+        required this.productId,
+        required this.productUnit,
+        required this.onDelete,
+        required this.isBool,
+        required this.productImage,
+        required this.productName,
+        required this.productPrice,
+        required this.wishList});
 
   @override
   _SingleItemState createState() => _SingleItemState();
